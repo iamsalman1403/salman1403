@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	float: left;
+	width: 100%;
+	background-color:#333;
+	font-family: 'Charmonman', cursive;
+}
+div{
+	float: left;
+	width: 100%;
+}
+.navbar{
+	width: 100%;
+	height:80px;
+}
+.logo{
+	width: 10%;
+}
+.logo>img{
+	width: 80px;
+	height: 80px;
+	animation-name: anim;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	border-radius: 50%;
+}
+.menu{
+	width: 90%;
+    background-color:#333;
+}
+.menuitem{
+	width: 25%;
+	text-align: center;
+	line-height: 100px;
+	color: white;
+}
+.img{
+	width:88%;
+	margin-left: 8px;
+}
+.img>img{
+	width: 100%;
+	height: 520px;
+	border-radius: 5px;
+}
+.ad{
+	width: 10%;
+	height: 520px;
+	margin-left: 8px;
+
+}
+/* .banner{
+	margin-top: 32px;	
+} */
+.mybtn{
+	margin-left: 33%;
+	padding: 8px 16px;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	border: none;
+	border:2px solid black;
+}
+.mybtn1{
+	margin-right: 30%;
+	padding: 8px 16px;
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+	border:2px solid black;
+}
+button:hover{
+	border:3px solid blue;
+	color: blue;
+	font-weight: 700;
+}
+.ad img{
+	width: 100%;
+	height: 520px;
+	border-radius: 5px;
+}
+footer{
+	padding: 16px;
+	text-align: center;
+	font-size: 1.3em;
+	color: #f1f1f1f1;
+}
+@keyframes anim{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+/* @keyframes anim2{
+	from{
+		
+	}
+	to{
+
+	}
+} */

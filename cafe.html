@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<link rel="stylesheet" type="text/css" href="cafe.css">
+</head>
+<body>
+	<div class="navbar">
+		<div class="logo">
+			<img src="logo.jpg">
+		</div> 
+	<div class="menu">
+		<div class="menuitem">HOME</div>
+		<div class="menuitem">ABOUT</div>
+		<div class="menuitem">GALLERY</div>
+		<div class="menuitem">CONTACT US</div>
+	</div>
+</div>
+
+<div class="banner">
+	<div class="img">
+	<img id="img" src="coffee.jpg">
+	</div>
+	<div class="ad">
+		<img name="ads">
+	</div>
+</div>
+
+	<button class="mybtn" onclick='document.getElementById("img").src="coffee.gif"'><p>Click me to pour the coffee!!</p></button>
+	
+	<button class="mybtn1" onclick='document.getElementById("img").src="coffee.jpg"'><p>Click me to stop pouring!!</p></button>
+
+	<footer>
+		<p>Cafe | &copy; 2018</p>
+	</footer>
+
+<script>
+	var i = 0;
+	var time = 3000;
+	var images = [];
+
+	images [0] = 'ad1.jpg';
+	images [1] = 'ad2.jpeg';
+	images [2] = 'ad3.png';
+
+	function slideAds(){
+		document.ads.src = images[i];
+
+		if (i < images.length-1) {
+			i++;
+		}
+		else{
+			i=0;
+		}
+		setTimeout('slideAds()', time);
+	}
+	window.onload = slideAds;
+</script>	
+
+</body>
+</html>
